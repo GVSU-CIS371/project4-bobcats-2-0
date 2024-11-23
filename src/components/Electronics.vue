@@ -25,7 +25,7 @@ import StoreItem from '../components/StoreItem.vue';
 
 const store = useProductStore();
 
-// Filter products by "Electronics"
+// filter products by electronics
 onMounted(() => {
   store.init();  // Initialize store
   store.filterByCategory("Electronics");

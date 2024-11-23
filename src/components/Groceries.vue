@@ -25,10 +25,10 @@ import StoreItem from '../components/StoreItem.vue';
 
 const store = useProductStore();
 
-// Filter products by "Groceries"
+// filter products by groceries
 onMounted(() => {
   store.init();  // Initialize store
-  store.filterByCategory("Groceries");  // Filter products to show only groceries
+  store.filterByCategory("Groceries");  // filters to show growceries
 });
 
 // Access filtered groceries
