@@ -19,4 +19,8 @@ type ProductDoc = {
   data: Product;
 };
 
+defineProps<{
+  product: { data: Product };
+}>();
+
 export type { Product, ProductDoc };

@@ -13,7 +13,18 @@
 </template>
 
 <script lang="ts" setup>
-defineProps({
-  product: Object, 
-});
+interface ProductData {
+  image: string;
+  name: string;
+  category: string;
+  price: number;
+  rating: number;
+  stock: number;
+  description: string;
+}
+
+defineProps<{
+  product: { data: ProductData };
+}>();
 </script>
+
